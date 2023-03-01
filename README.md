@@ -32,3 +32,8 @@ export GAZEBO_PLUGIN_PATH=/home/$(whoami)/PX4-Autopilot/build/px4_sitl_default/b
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/$(whoami)/PX4-Autopilot/build/px4_sitl_default/build_gazebo
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/$(whoami)/PX4-Autopilot:/home/$(whoami)/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic
 ~~~
+
+~~~shell
+$ killall gzserver
+$ killall gzclient
+~~~
