@@ -33,6 +33,9 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/$(whoami)/PX4-Autopilot/build/px4_
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/$(whoami)/PX4-Autopilot:/home/$(whoami)/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic
 ~~~
 
++ QGroundControl Install
+https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html
+
 ~~~shell
 $ killall gzserver
 $ killall gzclient
