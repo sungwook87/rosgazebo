@@ -36,6 +36,18 @@ export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/$(whoami)/PX4-Autopilot:/home/$(
 + QGroundControl Install
 https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html
 
++ Edit Launch file for SITL
+~~~shell
+        <arg name="fcu_url" default="udp://:14540@localhost:14557" />
+~~~
+
++ Run mavros + SITL separately,
+~~~shell
+    $ roslaunch mavros px4_sim.launch // make launch file for sim.
+    $ make px4_sitl gazebo
+~~~
+
++ Kill gazebo
 ~~~shell
 $ killall gzserver
 $ killall gzclient
