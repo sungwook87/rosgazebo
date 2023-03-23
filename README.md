@@ -46,6 +46,7 @@ https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.h
 + Run PX4-Autopilot
 ~~~shell
     $ roslaunch px4 mavros_posix_sitl.launch   //default setup
+~~~
 
 + Run mavros + SITL separately,
 ~~~shell
