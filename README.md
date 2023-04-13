@@ -63,6 +63,7 @@ https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.h
 ~~~shell
     - Drone sdf modeling
     : velodyne sdf (velo2cam pkg)
+    $ cd catkin_ws/src && git clone https://github.com/beltransen/velo2cam_gazebo
     : assembling (link tree)
     : inertia edit (+mass)
     : libvlp16.so plugin (path setup)
